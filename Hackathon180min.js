@@ -61,7 +61,7 @@ function deleteScholar(scholarId) {
   //   Lưu dữ liệu vào localStorage
   localStorage.setItem("scholars", JSON.stringify(scholars));
   displayData();
-  alert("Xóa scholar thành công!");
+  alert("Xóa học sinh thành công!");
   console.log(index);
 }
 
