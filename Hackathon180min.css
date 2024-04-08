@@ -65,13 +65,13 @@ h3 {
   border-radius: 5px;
   border: 1px solid gray;
 }
-#btnStudent {
+/* #btnStudent {
   width: 190px;
   height: 30px;
   border: 1px solid black;
   border-radius: 5px;
   margin-left: 105px;
-}
+} */
 
 .studentGender {
   display: flex;

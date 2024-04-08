@@ -1,30 +1,22 @@
 // Bai 1
-// function largest(a, n) {
-//   a.sort();
-
-//   let temp = a[n - 1];
-
-//   for (let i = n - 2; i >= 0; i--) {
-//     if (temp != a[i]) {
-//       if (i == 0) return a[0];
-//       if (i - 1 >= 0) {
-//         if (a[i] != a[i - 1]) {
-//           return a[i];
-//         }
-//       }
-
-//       temp = a[i];
+// let a = prompt("input: ");
+// let array = a.split("");
+// let arrayUnique = [];
+// for (let i in array) {
+//   let isUnique = true;
+//   for (let j in array) {
+//     if (i !== j && array[i] === array[j]) {
+//       isUnique = false;
+//       break;
 //     }
 //   }
-
-//   return -1;
+//   if (isUnique) {
+//     arrayUnique.push(array[i]);
+//   }
 // }
-// a = prompt("Số lớn nhất và xuất hiện 1 lần trong dãy 5 số bạn nhập:");
-// let arr = a.split("");
-// let N = arr.length;
-// alert(largest(arr, N));
+// console.log(arrayUnique[arrayUnique.length - 1]);
 
-// Bai3
+// Bai 3
 // function draw() {
 //   let n = 7;
 //   let m = 13;
@@ -57,11 +49,14 @@
 // let string = prompt("Nhập cụm chữ và số bất kì:");
 // let newStr = string
 //   .split("")
-//   .filter((element) => element >= "a" && element <= "z")
+//   .filter((element) => element >= "a" && element <= "z")|| (element>="A" && element <= "Z")
 //   .join("");
 
 // alert(newStr);
 
 // Bai 5
 // let string = prompt("Bạn hãy nhập câu bất kì");
-// alert([...string].reverse().join(""));
+// let newStr = [...string].reverse().join("");
+
+// let newStr2 = newStr.split(" ").reverse().join(" ");
+// console.log(newStr2);
