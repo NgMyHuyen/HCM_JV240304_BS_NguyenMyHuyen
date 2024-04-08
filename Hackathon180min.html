@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Hackathon180min.css" />
+  </head>
+  <body>
+    <div id="wrapped">
+      <!-- Form thong tin hoc vien -->
+
+      <form class="containerStudentInfor">
+        <h3 class="titleInform">Thông tin học viên</h3>
+        <div class="rowInform">
+          <label for="fullName">Họ và tên</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="rowInform">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="rowInform">
+          <label for="phone">Số điện thoại</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="rowInform">
+          <label for="address">Quê quán</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+          />
+        </div>
+
+        <div class="studentGender">
+          <!-- <p>Choose The Gender:</p> -->
+          <tr>
+            <td>
+              <label for="gender"> Giới tính </label>
+            </td>
+            <td>
+              <input type="radio" id="male" value="Nam" name="gender" checked />
+              <label style="color: black" for="male">Nam</label>
+
+              <input type="radio" id="female" value="Nữ" name="gender" />
+              <label style="color: black" for="female">Nữ</label>
+            </td>
+          </tr>
+          <div id="result"></div>
+        </div>
+        <button id="add" onclick="addStudent()">Add</button>
+        <button
+          type="button"
+          onclick="saveScholar()"
+          id="save"
+          style="display: none"
+        >
+          Save
+        </button>
+        `
+        <br />
+      </form>
+
+      <!-- Form Danh sach hoc vien -->
+      <div id="listScholar">
+        <form id="containerScholar">
+          <h3 class="titleList">Danh sách học sinh</h3>
+
+          <label>Tìm kiếm học viên</label>
+          <input type="text" id="filterScholar" />
+          <button type="button" id="btnSearch" onclick="searchScholars()">
+            Search
+          </button>
+        </form>
+
+        <table id="tableScholarList">
+          <tr>
+            <th>id</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Gender</th>
+            <th>Hành động</th>
+            <th>
+              <button id="arrange" onclick="sortScholar()">
+                sắp xếp(alpha b)
+              </button>
+            </th>
+          </tr>
+
+          <tbody id="tbody2"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./Hackathon180min.js"></script>
+  </body>
+</html>

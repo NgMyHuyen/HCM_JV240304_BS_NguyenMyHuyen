@@ -1,0 +1,138 @@
+/* THONG TIN HOC VIEN */
+#wrapped {
+  display: flex;
+  justify-content: space-around;
+}
+.containerStudentInfor {
+  display: flex;
+  height: 650px;
+  width: 450px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin: 0 auto; */
+  margin-left: 100px;
+  border: 1px solid black;
+  border-radius: 30px;
+  color: orange;
+}
+.titleInform {
+  padding-left: 26px;
+  padding-bottom: 35px;
+}
+.rowInform {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 30px;
+}
+h3 {
+  font-size: 1.4em;
+  margin-left: 118px;
+  margin-bottom: -5px;
+}
+#btnStudent {
+  width: 190px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 23px;
+}
+#fullName {
+  padding: 10px 26px 10px 26px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+  margin-left: 30px;
+}
+#email {
+  padding: 10px 26px 10px 26px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+  margin-left: 54px;
+}
+#phone {
+  margin-left: 9px;
+  width: 208px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#address {
+  margin-left: 30px;
+  width: 208px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#btnStudent {
+  width: 190px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 105px;
+}
+
+.studentGender {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#add {
+  width: 150px;
+  height: 30px;
+  margin-left: 161px;
+  background-color: white;
+}
+/* DANH SACH HOC VIEN */
+#tableScholarList {
+  border: 1px solid black;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  /* border-bottom: 1px; */
+  margin: 0 5px;
+  background-color: white;
+  border: none;
+  color: blue;
+  /* padding-left: 10px; */
+}
+
+#listScholar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 260px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border: 1px solid black;
+  margin-left: 30px;
+}
+.titleList {
+  font-size: 1.4em;
+  margin-left: 118px;
+  margin-bottom: -5px;
+  padding-bottom: 68px;
+  padding-right: 115px;
+}
+.btnedit {
+  background-color: white;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+}
+ul {
+  padding-left: 10px;
+}
+
+.search {
+  display: flex;
+  margin: 35px;
+}
